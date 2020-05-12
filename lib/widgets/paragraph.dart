@@ -13,8 +13,11 @@ class Paragraph extends StatelessWidget {
       TextSpan(
         children: [
           TextSpan(
-            children: next(node['content'] + '\n'),
+            children: next(node['content']),
           ),
+          TextSpan(
+            text: '\n'
+          )
         ],
       ),
     );
